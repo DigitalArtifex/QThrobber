@@ -30,8 +30,13 @@ QThrobber::QThrobber(QWidget *parent)
 
 QThrobber::~QThrobber()
 {
+    stop();
+    
     if(m_animationGroup)
         delete m_animationGroup;
+
+    if(m_secondaryAnimationGroup)
+        delete m_secondaryAnimationGroup;
 }
 
 void QThrobber::paintEvent(QPaintEvent *event)
