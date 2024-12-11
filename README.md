@@ -9,6 +9,8 @@ Customizable throbber widget for Qt that uses QPainter rather than gifs to provi
     throbber->setSpeed(QThrobber::Normal);
     throbber->setIcon(QIcon(":/icons/icons8-temperature.svg"));
     ui->widget->layout()->addWidget(throbber);
+
+    throbber->start(); //start animation
 ```
 
 If desired, you can pass a configured QPen object to the `setPen(...)` method. Setting the pen will override the size and color set with `setThrobberWidth(...)` and `setThrobberColor(...)` methods.
