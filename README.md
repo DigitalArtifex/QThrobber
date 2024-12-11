@@ -21,6 +21,8 @@ This is the preferred way to use color gradiants and dash styles
     pen.setWidth(4);
     pen.setColor("#F1F44E");
     pen.setCapStyle(Qt::RoundCap);
+
+    throbber->setPen(pen);
 ```
 
 The icon passed to QThrobber can be set to animate it's scale and/or opacity with the `setIconScaleAnimationEnabled(...)` and `setIconOpacityAnimationEnabled(...)`. By default, only the icon opacity animation is enabled
